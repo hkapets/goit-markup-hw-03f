@@ -6,16 +6,47 @@ body {
   line-height: 1.4;
   letter-spacing: 0.02em;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
 ul,
 ol {
   list-style-type: none;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.page-container {
+  max-width: 1128px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
 .page-header {
   background-color: #fff;
 }
-
+.header-container {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #fff;
+}
 .header-nav {
   color: #434455;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
 }
 .header-logo {
   font-family: Raleway, sans-serif;
@@ -31,7 +62,12 @@ ol {
   color: #2e2f42;
 }
 .header-nav-list {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
   color: #2e2f42;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-nav-item {
   font-weight: 500;
@@ -58,7 +94,12 @@ ol {
   font-style: normal;
 }
 .header-address-list {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
   font-style: normal;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-address-item {
   color: #434455;
@@ -66,7 +107,9 @@ ol {
   font-size: 16px;
   line-height: 1.5;
 }
-
+.header-address-item:last-child {
+  margin-right: 0;
+}
 .address-link {
   color: #434455;
   font-style: normal;
@@ -85,6 +128,14 @@ ol {
 .main {
   background-color: #fff;
 }
+.main-container {
+  flex-grow: 1;
+}
+.container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  max-width: 100%;
+}
 .hero-section {
   background-color: #2e2f42;
 }
@@ -94,6 +145,9 @@ ol {
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
+  max-width: 496px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .order-button {
@@ -104,6 +158,11 @@ ol {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  display: block;
+  max-width: 169px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 16px 32px;
 }
 .order-button:hover,
 .order-button:focus {
@@ -112,17 +171,20 @@ ol {
 .benefits-section {
   background-color: #fff;
 }
-.benefits-title {
-  color: #2e2f42;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
+.visually-hidden {
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .benefits-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
 }
 .benefits-item {
   line-height: 1.5;
+  max-width: 264px;
 }
 .benefits-item-title {
   color: #2e2f42;
@@ -146,6 +208,9 @@ ol {
   text-align: center;
 }
 .team-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
 }
 .team-member {
   background-color: #ffffff;
@@ -172,8 +237,16 @@ ol {
   text-align: center;
 }
 .portfolio-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 .portfolio-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+.product-review-container {
+  border: 1px solid #e7e9fc;
 }
 .product-title {
   color: #2e2f42;
@@ -187,6 +260,8 @@ ol {
 }
 .page-footer {
   background-color: #2e2f42;
+}
+.footer-container {
 }
 .footer-logo {
   color: #4d5ae5;
@@ -205,4 +280,5 @@ ol {
   color: #f4f4fd;
   font-weight: 500;
   line-height: 1.5;
+  max-width: 264px;
 }
