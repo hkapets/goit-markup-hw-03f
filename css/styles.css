@@ -26,20 +26,27 @@ img {
   max-width: 100%;
   height: auto;
 }
+a {
+  display: inline-block;
+}
 .page-container {
-  max-width: 1128px;
-  padding: 0 15px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 .page-header {
   background-color: #fff;
+
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
+  width: 1158px;
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid #fff;
 }
 .header-nav {
   color: #434455;
@@ -57,6 +64,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration-line: none;
+  margin-right: 76px;
 }
 .header-logo-part {
   color: #2e2f42;
@@ -66,12 +74,11 @@ img {
   flex-direction: row;
   gap: 40px;
   color: #2e2f42;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .header-nav-item {
   font-weight: 500;
   line-height: 1.5;
+  padding: 24px 0;
 }
 .header-nav-link {
   color: #2e2f42;
@@ -118,6 +125,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration-line: none;
+  display: inline-block;
 }
 .address-link:hover,
 .address-link:focus {
@@ -128,16 +136,10 @@ img {
 .main {
   background-color: #fff;
 }
-.main-container {
-  flex-grow: 1;
-}
-.container {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  max-width: 100%;
-}
+
 .hero-section {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 .hero-title {
   color: #fff;
@@ -159,7 +161,10 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   display: block;
-  max-width: 169px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
   margin-right: auto;
   margin-left: auto;
   padding: 16px 32px;
@@ -260,8 +265,7 @@ img {
 }
 .page-footer {
   background-color: #2e2f42;
-}
-.footer-container {
+  padding: 100px 0;
 }
 .footer-logo {
   color: #4d5ae5;
@@ -272,6 +276,8 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration-line: none;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-logo-part {
   color: #f4f4fd;
